@@ -78,8 +78,8 @@ function plotOrcas(year){
     console.log(`called for year ${year}`);
   for (orca in orcas){
     if (new Date (orcas[orca]["sighted_at"]).getFullYear() == year){
-      L.marker([orcas[orca]["latitude"], orcas[orca]["longitude"]], {icon: orcaIcon}).addTo(mymap)
-        .bindPopup("<b>I'm whaelo</b><br />observed at.");
+      L.marker([orcas[orca]["latitude"], orcas[orca]["longitude"]], {icon: orcaIcon}).addTo(mymap);
+        // .bindPopup("<b>I'm whaelo</b><br />observed at.");
     }
   }
 }
